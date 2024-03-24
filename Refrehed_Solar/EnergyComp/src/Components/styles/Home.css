@@ -1,0 +1,71 @@
+.heroSection {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image: url(./assets/Solar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.heroTitle {
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 20%;
+  font-size: 100px;
+  color: #fff;
+}
+
+.briefDescription {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 5%;
+  padding-left: 5%;
+  background-color: #d9f4fe;
+}
+
+.anotherCardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.featuredHeader {
+  font-size: 50px;
+  padding: 20px 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #242424;
+  list-style: none;
+}
+
+.ctaHeader {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+
+.callToAction {
+  padding: 10px;
+}
+
+.thirdCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: stretch;
+  translate: 11%;
+}
+
+.homeHook {
+  padding: 50px;
+}

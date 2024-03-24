@@ -1,0 +1,60 @@
+.profileImage {
+  background-image: url(assets/profilePhoto.jpg);
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin: 50px;
+}
+
+.aboutMeSection {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 50px;
+  font-weight: bold;
+  background-color: #8E3838;
+}
+
+.aboutMeHeader {
+  font-size: 50px;
+  padding: 100px 0px 20px;
+  background-color: #8E3838;
+  width: 100vw;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+.bioSection {
+  max-width: 50%;
+}
+
+.bio {
+  margin: 10px;
+}
+
+.hook2,
+.hook3 {
+  position: inherit;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutMeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bioSection {
+    max-width: 90%;
+    font-size: small;
+  }
+
+  .hook2 {
+    padding: 0px 0px 50px;
+  }
+}

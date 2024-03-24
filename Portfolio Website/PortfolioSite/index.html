@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam Yavari Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light">
+    <!-- 
+        MAIN SECTION 
+    -->
+    <label class="toggle-switch" id="toggle-switch">
+      <input type="checkbox" />
+      <div class="toggle-switch-background">
+        <div class="toggle-switch-handle"></div>
+      </div>
+    </label>
+
+    <section class="main" id="main">
+      <h1 class="title" id="title">Sam Yavari</h1>
+      <p class="main-desc" id="main-desc">
+        A keen programmer who is eager to learn and create. I have a background
+        in Mechanical Engineering but Software Engineering is where my interests
+        lie. Look through my projects and my GitHub and reach out when something
+        catches your eye.
+      </p>
+    </section>
+
+    <!--
+        PROJECTS SECTION
+    -->
+
+    <section class="projects" id="projects">
+      <a href="">
+        <div class="projectTile" id="projectTile">
+          <div class="imgContainer">
+            <img src="./images/Marc.jpg" />
+          </div>
+          <div class="PTContainer">
+            <h2 class="projectTitle">Marcus Aurelius Quotes</h2>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="projectTile" id="projectTile">
+          <div class="imgContainer">
+            <img src="./images/Marc.jpg" />
+          </div>
+          <div class="PTContainer">
+            <h2 class="projectTitle">Python Photo Enhancer</h2>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="projectTile" id="projectTile">
+          <div class="imgContainer">
+            <img src="./images/Marc.jpg" />
+          </div>
+          <div class="PTContainer">
+            <h2 class="projectTitle">yFinance Python Algorythm</h2>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="projectTile" id="projectTile">
+          <div class="imgContainer">
+            <img src="./images/Marc.jpg" />
+          </div>
+          <div class="PTContainer">
+            <h2 class="projectTitle">John's Photography Website</h2>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="projectTile" id="projectTile">
+          <div class="imgContainer">
+            <img src="./images/Marc.jpg" />
+          </div>
+          <div class="PTContainer">
+            <h2 class="projectTitle">Refreshed Solar Website</h2>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="projectTile" id="projectTile">
+          <div class="imgContainer">
+            <img src="./images/Marc.jpg" />
+          </div>
+          <div class="PTContainer">
+            <h2 class="projectTitle">Company Expenses Tracker</h2>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="projectDescriptions" id="projectDescriptions">
+        <h2 class="PDHeader">Project Descriptions</h2>
+      
+        <div class="overallContainer">
+            <div class="sidebarSection">
+              <div class="circle"></div>
+              <div class="line"></div>
+              <div class="circle2"></div>
+            </div>
+      
+            <div class="descriptionsSection">
+              <div class="descriptionTile">
+                <h3 class="PDTitle">Marcus Aurelius Quotes</h3>
+                <p class="desc">
+                  This project is a chrome extension based on Marcus Aurelius' quotes
+                  as a helping hand when the days gets tough. This project was made
+                  with simple HTML, CSS and JavaScript.
+                </p>
+              </div>
+      
+              <div class="descriptionTile">
+                <h3 class="PDTitle">yFinance Python Algorythm</h3>
+                <p class="desc">
+                  I made an alogrythm based on the yFinance API using python and the
+                  Jupyter Notebook to visualise the data. The algorythm uses the last
+                  20 years of financial data to give an accurate reading of what the
+                  stock markets S&P500 trades will look like up to 3 months, with a
+                  70% accuracy.
+                </p>
+              </div>
+      
+              <div class="descriptionTile">
+                <h3 class="PDTitle">John's Photography Website</h3>
+                <p class="desc">
+                  John's Photography Website is a freelance photography website
+                  showcasing some of the work he has done. this was a website I made
+                  using HTML, CSS and JavaScript.
+                </p>
+              </div>
+      
+              <div class="descriptionTile">
+                <h3 class="PDTitle">Refreshed Solar Website</h3>
+                <p class="desc">
+                  The Refreshed Solar Website is about a company that gets solar
+                  panels that have been broken and refirbushes them to be sold at an
+                  affordable price for people to use for their homes and for larger
+                  corporations too. This project was made with React.
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        CONTACT SECTION 
+    -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2></h2>
+        <p>Feel free to contact me on the following platforms linked below</p>
+      </div>
+      <div class="contact-links">
+        <a id="profile-link" href="" target="_blank" class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+
+        <a href="" class="btn contact-details"
+          ><i class="fas fa-at"></i> Email</a
+        >
+        <a
+          id="profile-link"
+          href="https://www.linkedin.com/in/sam-yavari-a3aa65198/"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-linkedin"></i> Linkedin</a
+        >
+      </div>
+    </section>
+
+    <script>
+      // Toggle Switch
+      const toggleSwitch = document.getElementById("toggle-switch");
+      const body = document.body;
+
+      toggleSwitch.addEventListener("change", () => {
+        body.classList.toggle("dark");
+        body.classList.toggle("light");
+      });
+    </script>
+  </body>
+</html>

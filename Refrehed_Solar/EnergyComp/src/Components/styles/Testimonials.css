@@ -1,0 +1,84 @@
+.testimonialSection h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+
+.testimonail {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.testimonialImage { 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testDesc {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.test1, .test3, .test5, .name1, .name3, .name5{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.testimonialContainer {
+    display: flex;
+    padding: 0px 50px 0px;
+}
+
+.testimonialInfo {
+    max-width: 60%;
+    padding: 20px;
+}
+.testimonial{
+    text-align: center;
+}
+.customerNames {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+/* 
+    IMAGES 
+*/
+
+.customer1 {
+    background-image: url(assets/Customer1.jpg);   
+}
+
+.customer2 {
+    background-image: url(assets/Customer2.jpg);   
+}
+
+.customer3 {
+    background-image: url(assets/Customer3.jpg);   
+}
+
+.customer4 {
+    background-image: url(assets/Customer4.jpg);   
+}
+
+.customer5 {
+    background-image: url(assets/Customer5.jpg);   
+}
+
+
+.test5 {
+    padding-bottom: 100px;
+}
