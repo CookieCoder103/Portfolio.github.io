@@ -146,11 +146,9 @@ h1 {
 .tech-stack-container {
   display: inline-block;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
   background-color: var(--bg-second);
   padding: 20px;
-  white-space: nowrap;
 }
 
 .scroller {
