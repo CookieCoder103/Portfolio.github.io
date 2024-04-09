@@ -139,48 +139,94 @@ h1 {
   padding-bottom: 50px;
 }
 
-.tech-stack-section p {
-  padding: 20px 10%;
+/* 
+  SCROLLER SECTION
+*/
+
+.tech-stack {
+  padding: 10px 10%;
 }
 
-.tech-stack-container {
-  display: inline-block;
-  width: 100%;
-  justify-items: center;
+.scroller-container {
   background-color: var(--bg-second);
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroller {
-  max-width: 800px;
-  border: 1px solid green;
+  max-width: 600px;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: bold;
 }
 
 .scroller[data-animated="true"] {
-  overflow: hidden; 
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-.scroller[data-animated="true"] .slides {
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
   flex-wrap: nowrap;
-} 
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
 
-.slides {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-} 
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
 
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+}
 
 .cv-button { 
   position: absolute;
-  right: 20%;
-  padding: 30px;
+  right: 10%;
+  padding: 20px;
+  margin: -10px;
 }
 
 .btn {
   background-color: var(--bg-second);
-  color: var(--color-txt);
+  color: #f8fbffe0;
   padding: 10px;
   border-radius: 30px;
   border: 1px solid transparent;
@@ -273,6 +319,12 @@ h1 {
   }
 }
 
+@media screen and (max-width:600px) {
+  .projectDescriptions {
+    padding: 0px 10% 30px;
+  }
+}
+
 /* CONTACT */
 
 .contact-section {
@@ -323,4 +375,28 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+
+/* 
+  ANIMATE ON SCROLL 
+*/
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 4s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0%);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
