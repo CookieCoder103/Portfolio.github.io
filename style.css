@@ -264,7 +264,10 @@ h1 {
 
 .imgContainer img {
   width: 250px;
-  height: auto;
+}
+
+.csproj {
+  height: 250px;
 }
 
 .PTContainer {
