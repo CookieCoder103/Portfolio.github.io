@@ -258,12 +258,16 @@ h1 {
 
 .imgContainer {
   width: 250px;
-  height: 250px;
+  height: 175px;
   overflow: hidden;
 }
 
 .imgContainer img {
   width: 250px;
+}
+
+.solarImg {
+  height: 100%;
 }
 
 .csproj {
